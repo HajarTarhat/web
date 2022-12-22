@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Merienda:wght@800&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&family=Merienda:wght@800&family=Permanent+Marker&display=swap'); </style>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewpart" content="width-device-width,initial-scale1.0">
+<title>Adventure</title>
+<link rel="stylesheet" href="css/mystyle.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+
+    <!-- ----------- Start Nav ---------------->
+ 
+
+    <nav class="nav">
+        <div class="container">
+            <div  class="logo">
+              <img src="images/logogreen.jpg" alt="photo" id="log">
+                <a href="#">Art.graphy</a>
+            </div>
+            <div class="main_list" id="mainListDiv">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">My work</a></li>
+                    <li><a href="#">Design</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="media_button">
+                <button class="main_media_button" id="mediaButton">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <header></header>
+
+    <!--  ------------ End Nav ----------- -->
+  <div class="introduction">
+    <div class="title"></div>
+  </div>
+
+<!-- /*-------------------Slider----------------*/ -->
+<section div="slider1">
+    <div class="slider">
+        <div class="mySlides">
+          <div class="numbertext"></div>
+              <img src="images/photographie-architecture-jean-michel-berts-01.jpg">
+              <div class ="text">Photographie Achitecture</div>
+          </div>
+        
+        <div class="mySlides"> 
+        <div class="numbertext"></div>
+            <img src="images/camera.jpg">
+            <div class="text">Camera</div>
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext"></div>
+            <img src="images/colorful street.jpg ">
+            <div class ="text">City Life</div>
+        </div>
+
+        <div class="mySlides">
+        <div class="numbertext"></div>
+            <img src="images/self.jpg">
+            <div class ="text">Capturing The moment</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div> 
+</section>
+<h1 class="h1">My Blog Posts</h1>
+<section id="posts"></section>
+
+<template id="post-template">
+  <div class="post">
+    <img src="" alt="" class="post__img">
+    <h4 class="post__title"></h4>
+    <p class="post__body"></p>
+  </div>
+</template>
+    <!-- /*------------------------------------------Formulaire---------------------------------------------------*/ -->
+ <section>
+
+    <h1 class="h1">Contact Us</h1>
+       <form name="myForm"  method="post" class="form">
+         
+        <table class="form-style">
+            <tr>
+               <td>
+                  <label>
+                     Votre nom <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="text" name="name" class="long" id="name"/>
+                  <span class="error" id="errorname"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Votre adresse e-mail <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+                  <input type="email" name="email" class="long" id="email"/>
+                  <span class="error" id="erroremail"></span>
+               </td>
+            </tr>
+            <tr>
+               <td>
+                  <label>
+                     Message <span class="required">*</span>
+                  </label>
+               </td>
+               <td>
+          
+                 <textarea name="message" class="long field-textarea" id="msg"></textarea>
+                  <span class="error" id="errormsg"></span>
+                  <button type="submit">send</button>
+               </td>
+            </tr>
+           
+         </table>
+        
+     
+      <div class="results">
+        <h2 class="results__heading">Form Data</h2>
+        <pre class="results__display-wrapper"><code id="showJson" class="results__display"></code></pre>
+      </div>
+</section> 
+
+<!-- /*--------------------------------------footer-----------------------------*/ -->
+<footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+<script text="javascript" src="js/myjavascript.js">    </script>
+
+
+</body>
+</html>
